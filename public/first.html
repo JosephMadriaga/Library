@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to LibrEase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fbe7; /* Soft yellow background */
+            color: #2e7d32; /* Dark green text */
+        }
+        header {
+            background: linear-gradient(135deg, #1b5e20, #388e3c);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Lora', serif;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h2 {
+            font-family: 'Lora', serif;
+            color: #1b5e20;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .start-button {
+            margin: 30px auto;
+            background: linear-gradient(135deg, #66bb6a, #43a047);
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .start-button:hover {
+            background: linear-gradient(135deg, #43a047, #1b5e20);
+            transform: scale(1.1);
+        }
+        .book-showcase {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .book-card {
+            background-color: #ffffff; 
+            border: 1px solid #c8e6c9;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .book-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 10px 0;
+            font-family: 'Lora', serif;
+        }
+        .author {
+            color: #43a047; 
+            font-style: italic;
+        }
+        footer {
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+        }
+        a {
+            color: #1b5e20;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to LibrEase</h1>
+        <p>Making Library Management Easy and Efficient</p>
+    </header>
+    <div class="container">
+        <h2>Discover Famous Books in Philippine History</h2>
+        <p>Explore our collection of historically significant books that shaped the nation's culture and identity.</p>
+        <button class="start-button" onclick="location.href='authentication.html'">Start</button>
+        <div class="book-showcase">
+            <div class="book-card">
+                <div class="book-title">Noli Me Tangere</div>
+                <div class="author">by José Rizal</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">El Filibusterismo</div>
+                <div class="author">by José Rizal</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Florante at Laura</div>
+                <div class="author">by Francisco Balagtas</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Doctrina Christiana</div>
+                <div class="author">(The Christian Doctrine)</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Mga Ibong Mandaragit</div>
+                <div class="author">by Amado V. Hernandez</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Dekada '70</div>
+                <div class="author">by Lualhati Bautista</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Banaag at Sikat</div>
+                <div class="author">by Lope K. Santos</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">America Is Not the Heart</div>
+                <div class="author">by Elaine Castillo</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Smaller and Smaller Circles</div>
+                <div class="author">by F.H. Batacan</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Ilustrado</div>
+                <div class="author">by Miguel Syjuco</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Dogeaters</div>
+                <div class="author">by Jessica Hagedorn</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Balagtasan</div>
+                <div class="author">(Poetic Debates)</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 LibrEase | Designed to Inspire Readers
+    </footer>
+</body>
+</html>
