@@ -4,6 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f5e9; /* Light green background */
+            color: #2d6a4f; /* Dark green text */
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #ffffff; /* White background for the container */
+            border: 1px solid #b7e4c7; /* Light green border */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1b4332; /* Deep green for heading */
+            margin-bottom: 20px;
+        }
+
+        .form-input {
+            display: block;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #b7e4c7; /* Green border for inputs */
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #2d6a4f; /* Darker green border on focus */
+            box-shadow: 0 0 5px rgba(45, 106, 79, 0.5);
+        }
+
+        .form-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff; /* White text */
+            background-color: #40916c; /* Medium green button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-button:hover {
+            background-color: #2d6a4f; /* Dark green on hover */
+        }
+
+        .success-message {
+            color: #2d6a4f; /* Dark green for success messages */
+            margin-top: 10px;
+        }
+
+        .error-message {
+            color: #d9534f; /* Red for error messages */
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
